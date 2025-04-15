@@ -1,5 +1,6 @@
 # 💼 Rust Risk Management Tool
 
+<<<<<<< HEAD
 This project is a simple CLI-based tool developed in Rust for managing trading risk in both **Futures** and **Spot** markets. It helps calculate trade size, potential loss, potential profit, and risk-to-reward (R:R) ratio based on user input.
 
 ## 📊 Features
