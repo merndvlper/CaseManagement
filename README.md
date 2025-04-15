@@ -1,3 +1,29 @@
-### Kripto İçin Kasa Yönetimi
+# 💼 Rust Risk Management Tool
 
-Bu proje, kullanıların kripto piyasasında hem spot işlemlerde hem de vadeli işlemlerde kasalarını daha iyi yönetmelerine olanak sağlar. Grafikte belirlenen setup için giriş , çıkış ve hedef seviyelerini, kasanızda ki toplam para miktarını, risk yüzdenizi (burada risk yüzdeniz stop olmanız durumunda kasanızdan gözden çıkardığınız paranın kasanıza oranıdır. Örneğin 100 dolarlık bir kasada riskinizi 1 belirliyorsanız yüzde kısmına 1 yazmalısınız) ve eğer vadeli işlem giriyorsanız kaldıraç miktarınızı girmelisiniz. Sonuç olarak size girmeniz gereken dolar miktarını, hedefe ulaştığınızda kazanacağınız parayı ve stop olduğunuzda kaybedeceğiniz para miktarını verir. 
+This project is a simple CLI-based tool developed in Rust for managing trading risk in both **Futures** and **Spot** markets. It helps calculate trade size, potential loss, potential profit, and risk-to-reward (R:R) ratio based on user input.
+
+## 📊 Features
+
+- Two options:
+  - [1] Futures Case Management
+  - [2] Spot Case Management
+- Calculates:
+  - Trade amount based on risk percentage and stop-loss
+  - Estimated profit based on target price
+  - R:R (Risk to Reward) ratio
+  - Final balance if trade is successful
+- Basic risk validation:
+  - Warnings for high risk percentages
+  - Error if input values are invalid (e.g., negative balance)
+
+## 🚀 How to Run
+
+1. Make sure Rust is installed on your system. If not:  
+   [https://rustup.rs/](https://rustup.rs/)
+
+2. Clone or download the project files.
+
+3. Compile and run the project using:
+
+```bash
+cargo run
